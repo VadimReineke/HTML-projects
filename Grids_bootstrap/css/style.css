@@ -1,0 +1,485 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  min-width: 320px;
+  background-color: #FFF;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+button:active, button:focus, a:active, a:focus {
+  outline: none;
+  transition: border 0.3s ease, outline 0.3s ease, opacity 0.2s ease-in-out;
+}
+
+/* glob */
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  padding: 20px 75.5px;
+  border: none;
+  border-radius: 20px;
+  background: #3F2AFF;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 27px;
+  cursor: pointer;
+}
+
+.btn:active {
+  outline: 2px solid red;
+  opacity: 25%;
+}
+
+.btn:focus {
+  outline: 2px solid red;
+}
+
+.btn:hover {
+  outline: 2px solid red;
+}
+
+.btn-reset {
+  border: none;
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto-Regular'),
+    url('/fonts/Roboto-Regular.woff2') format('woff2'),
+    url('/fonts/Roboto-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto Bold'), local('Roboto-Bold'),
+    url('/fonts/Roboto-Bold.woff2') format('woff2'),
+    url('/fonts/Roboto-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* header */
+
+.header__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #3F2AFF;
+}
+
+.header__logo {
+  margin-right: 30px;
+  transition: color 0.3s ease, outline 0.3s ease;
+}
+
+.header__logo:active {
+  outline: 2px solid red;
+}
+
+.header__logo:focus {
+  outline: 2px solid red;
+}
+
+.header__logo:hover {
+  border-bottom: 2px solid red;
+}
+
+.header__logo-img {
+  max-width: 94px;
+  height: 21px;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.header__nav {
+  flex: 0 0 43%;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.nav__link {
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: color 0.3s ease, border 0.3s ease, outline 0.3s ease;
+}
+
+.nav__link:active {
+  outline: 2px solid red;
+}
+
+.nav__link:focus {
+  outline: 2px solid red;
+}
+
+.nav__link:hover {
+  border-bottom: 2px solid red;
+}
+
+.burger {
+  display: none;
+}
+
+/* hero */
+
+.hero__container {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+
+}
+
+.hero__row-img {
+  background-image: url(../img/hero/hero-1110.png);
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
+}
+
+.hero__text {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.hero__title {
+  margin-bottom: 28px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.hero__descr {
+  margin-bottom: 63px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* about-us */
+
+.about-us__container {
+  max-width: 1440px;
+  padding: 80px 0 65px 0;
+  margin: 0 auto;
+}
+
+.about-us__advantages-wrapper {
+  margin-bottom: 25px;
+  background-image: url(../img/about-us/Vectary-texture1110.jpg);
+  background-repeat: no-repeat;
+  background-position: 1.5% 46%;
+}
+
+.about-us-img {
+  padding-top: 2%;
+}
+
+.about-us__title {
+  padding: 0;
+  margin-bottom: 17px;
+  color: #2E2B44;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.about-us__decr {
+  padding: 0;
+  color: #666;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.about-us__item {
+  display: flex;
+}
+
+.about-us__item svg {
+  flex-shrink: 0;
+}
+
+.about-us__item-descr {
+  padding: 12px 5px 0px 30px;
+  color: #666;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+/* teachers */
+
+.teachers__container {
+  max-width: 1440px;
+  padding: 74px 0 59px 0;
+  margin: 0 auto;
+  background: #212133;
+}
+
+.teachers__title {
+  margin-bottom: 22px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.teachers-avatar {
+  margin-bottom: 31px;
+  border-radius: 25px 25px 0 0;
+}
+
+.teachers__item-title {
+  margin-bottom: 5px;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.teachers__item-descr {
+  padding-right: 5px;
+  color: #85859B;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* courses */
+
+.courses__container {
+  max-width: 1440px;
+  padding: 75px 0 33px 0;
+  margin: 0 auto;
+}
+
+.courses__title {
+  margin-bottom: 22px;
+  color: #212133;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+
+.courses__item {
+  margin-bottom: 30px;
+}
+
+.courses__item-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #EDF0F9;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.courses__item-card::after {
+  position: absolute;
+  top: 12px;
+  right: 19px;
+  padding-left: 29px;
+  padding-bottom: 5px;
+  background-image: url(../img/mdi_access_time.png);
+  background-repeat: no-repeat;
+  color: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.courses__item-card-cinema::after {
+  content: "60 часов";
+}
+
+.courses__item-card-blender::after {
+  content: "40 часов";
+}
+
+.courses__item-card-3ds-max::after {
+  content: "40 часов";
+}
+
+.courses__item-card-zbrush::after {
+  content: "80 часов";
+}
+
+.courses__card-container {
+  padding: 30px 30px 140px 30px;
+}
+
+.courses__card-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+.courses__card-title {
+  margin-bottom: 8px;
+  color: #212133;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.courses__card-descr {
+  color: #666;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.courses__item-card-button {
+  position: absolute;
+  bottom: 30px;
+  left: 45px;
+  padding: 16.5px 58px;
+  font-size: 16px
+}
+
+/* footer */
+
+.footer__container {
+  margin: 0 auto;
+  max-width: 1440px;
+  background: #2E2B44;
+}
+
+.footer__social-link-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 80px;
+  gap: 30px;
+}
+
+.social-link {
+  fill: white;
+}
+
+.social-link:active {
+  outline: none;
+}
+
+.social-link:focus {
+  outline: 2px solid red;
+}
+
+.social-link:hover {
+  fill: red;
+}
+
+.copyright-text {
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.trademark {
+  color: #3F2AFF;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.footer__container-copyright {
+  text-align: center;
+}
